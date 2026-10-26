@@ -1,0 +1,3 @@
+file_id,file_path,origin,captured_at
+evidence_501,evidence/customer_data_inventory_20260905.sql,customer_data_inventory_capture,2026-09-05T09:00:00Z
+evidence_502,evidence/customer_data_inventory_20260920.sql,customer_data_inventory_capture,2026-09-20T09:00:00Z

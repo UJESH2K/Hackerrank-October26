@@ -1,0 +1,3 @@
+case_id,is_deletion_request,request_type,confidence,reason
+case_401,false,MARKETING_OPT_OUT,0.97,marketing-only opt-out that keeps the account
+case_402,true,ACCOUNT_DELETION,0.99,explicit permanent account deletion

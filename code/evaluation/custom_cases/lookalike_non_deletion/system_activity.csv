@@ -1,0 +1,2 @@
+activity_id,event_time,event_type,source_system,target_system,resource_id,reported_result,details
+activity_401,2026-08-14T10:58:00Z,DELETE_RECORD,deletion_worker,account_service,account_402,PARTIAL,Deletion worker completed some internal work but could not confirm the final state. Target resource: account_402.

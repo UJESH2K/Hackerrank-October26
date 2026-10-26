@@ -1,0 +1,2 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+case_201,tomas.brandt@example.net,2026-06-08T09:00:00Z,COMPLETE,2026-06-10T11:00:00Z,2026-06-16T12:00:00Z,"Please erase the account linked to this email address and every copy of my personal data."

@@ -1,0 +1,5 @@
+audit_id,user_id,event_time,field_name,old_value,new_value
+audit_101,user_101,2026-01-15T09:00:00Z,email,rosa.delgado.1998@oldmail.example,rosa.delgado@midmail.example
+audit_102,user_101,2026-01-15T09:00:00Z,email_hash,aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+audit_103,user_101,2026-04-02T08:00:00Z,email,rosa.delgado@midmail.example,r.delgado@newmail.example
+audit_104,user_101,2026-04-02T08:00:00Z,email_hash,bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb,cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc

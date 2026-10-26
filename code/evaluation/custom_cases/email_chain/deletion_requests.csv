@@ -1,0 +1,2 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+case_101,rosa.delgado.1998@oldmail.example,2026-05-04T10:00:00Z,COMPLETE,2026-05-06T12:00:00Z,2026-05-12T12:00:00Z,"Please permanently delete the account associated with this email address."

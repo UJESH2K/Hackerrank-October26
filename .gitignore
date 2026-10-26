@@ -1,0 +1,19 @@
+# Caches and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local LLM response cache (never committed)
+code/.cache/
+
+# Secrets
+.env
+
+# Virtual environments
+.venv/
+venv/
+
+# Packaging output
+code.zip
+agent-trace.zip

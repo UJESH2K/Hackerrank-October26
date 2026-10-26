@@ -1,0 +1,13 @@
+# Runtime dependencies for the Ghost Data Still Exists deletion-audit agent.
+# Pinned to the versions the solution was developed and evaluated against.
+
+pyyaml==6.0.3            # code/config.yaml
+anthropic==1.5.0         # LLM client (request-intent classification, evidence vision)
+python-dotenv==1.0.1     # loads .env at the repository root (never committed)
+pdfplumber==0.11.10      # text extraction from PDF evidence
+pypdf==6.13.3            # PDF fallback / page metadata
+pillow==13.0.0           # image evidence handling before vision calls
+
+# Development / quality gate
+pytest==9.1.1
+ruff==0.17.2

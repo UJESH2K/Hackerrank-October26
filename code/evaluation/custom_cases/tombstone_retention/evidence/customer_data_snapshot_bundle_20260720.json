@@ -1,0 +1,50 @@
+{
+ "exported_at": "2026-07-20T15:00:00Z",
+ "source": "records_assurance_service",
+ "snapshots": [
+  {
+   "captured_at": "2026-07-20T12:00:00Z",
+   "data_store": "identity_service",
+   "collection": "deleted_customer_references",
+   "records": [
+    {
+     "resource_id": "tombstone_301",
+     "subject_reference": "user_301",
+     "name": "Amara Okonkwo",
+     "email": "amara.okonkwo@example.org",
+     "phone": null,
+     "email_hash": null,
+     "account_status": "DELETED"
+    }
+   ]
+  },
+  {
+   "captured_at": "2026-07-20T12:00:00Z",
+   "data_store": "security_service",
+   "collection": "security_audit_events",
+   "records": [
+    {
+     "resource_id": "audit_record_301",
+     "subject_reference": "user_301",
+     "event_name": "account_deletion_reviewed",
+     "actor_type": "automated_privacy_workflow",
+     "integrity_seal": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+    }
+   ]
+  },
+  {
+   "captured_at": "2026-07-20T12:00:00Z",
+   "data_store": "backup_service",
+   "collection": "backup_catalog",
+   "records": [
+    {
+     "resource_id": "backup_301",
+     "archive_path": "s3://customer-backups/weekly/segment-11.tar.zst",
+     "subject_reference": "user_301",
+     "restore_allowed": false,
+     "encryption": "AES-256"
+    }
+   ]
+  }
+ ]
+}

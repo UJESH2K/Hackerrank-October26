@@ -1,0 +1,3 @@
+activity_id,event_time,event_type,source_system,target_system,resource_id,reported_result,details
+activity_301,2026-07-16T10:58:00Z,REDACT_RECORD,deletion_worker,identity_service,tombstone_301,PARTIAL,Policy action completed for tombstone_301.
+activity_302,2026-07-16T10:59:00Z,RETAIN_RECORD,security_service,archive_service,audit_record_301,SUCCESS,Security-event archival processed audit_record_301.

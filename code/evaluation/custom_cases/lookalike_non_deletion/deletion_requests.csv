@@ -1,0 +1,3 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+case_401,alice.monroe@example.com,2026-08-12T09:00:00Z,NOT_STARTED,2026-08-14T11:00:00Z,2026-08-20T12:00:00Z,"Please remove me from marketing lists only. I still want receipts and service messages for this account."
+case_402,a.monroe@example.com,2026-08-12T09:00:00Z,PARTIALLY_COMPLETE,2026-08-14T11:00:00Z,2026-08-20T12:00:00Z,"Please permanently delete the account associated with this email address and all personal data held against it."

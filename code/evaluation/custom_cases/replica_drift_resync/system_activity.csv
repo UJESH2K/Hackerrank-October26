@@ -1,0 +1,3 @@
+activity_id,event_time,event_type,source_system,target_system,resource_id,reported_result,details
+activity_201,2026-06-10T10:58:00Z,DELETE_RECORD,deletion_worker,account_service,account_201,SUCCESS,Deletion worker reported the requested operation as completed. Target resource: account_201.
+activity_202,2026-06-12T04:10:00Z,SYNC_RECORD,integration_service,search_service,search_201,SUCCESS,Active connector repopulated downstream resource search_201.

@@ -1,0 +1,369 @@
+{
+ "recorded_at": "2026-10-25T09:48:28+00:00",
+ "suites": [
+  {
+   "suite": "email_chain",
+   "cases": 1,
+   "status_correct": 1,
+   "status_accuracy": 1.0,
+   "confusion": {
+    "COMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    },
+    "INCOMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 1,
+     "NOT_APPLICABLE": 0
+    },
+    "NOT_APPLICABLE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    }
+   },
+   "steps": {
+    "true_positive": 9,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "resource_discovery": {
+    "true_positive": 3,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "fields": {
+    "state": 1.0,
+    "evidence_id": 1.0,
+    "step_no": 1.0
+   },
+   "matched_steps": 9,
+   "sequence_exact": 1,
+   "sequence_accuracy": 1.0,
+   "mean_sequence_distance": 0.0,
+   "exact_cases": 1,
+   "exact_accuracy": 1.0,
+   "identity_resolved": 1,
+   "identity_correct": 1,
+   "identity_accuracy": 1.0,
+   "causes": {},
+   "per_case": [
+    {
+     "case_id": "case_101",
+     "gold_status": "INCOMPLETE",
+     "predicted_status": "INCOMPLETE",
+     "gold_steps": 9,
+     "predicted_steps": 9,
+     "matched_steps": 9,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    }
+   ]
+  },
+  {
+   "suite": "lookalike_non_deletion",
+   "cases": 2,
+   "status_correct": 2,
+   "status_accuracy": 1.0,
+   "confusion": {
+    "COMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    },
+    "INCOMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 1,
+     "NOT_APPLICABLE": 0
+    },
+    "NOT_APPLICABLE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 1
+    }
+   },
+   "steps": {
+    "true_positive": 6,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "resource_discovery": {
+    "true_positive": 2,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "fields": {
+    "state": 1.0,
+    "evidence_id": 1.0,
+    "step_no": 1.0
+   },
+   "matched_steps": 6,
+   "sequence_exact": 2,
+   "sequence_accuracy": 1.0,
+   "mean_sequence_distance": 0.0,
+   "exact_cases": 2,
+   "exact_accuracy": 1.0,
+   "identity_resolved": 2,
+   "identity_correct": 1,
+   "identity_accuracy": 0.5,
+   "causes": {},
+   "per_case": [
+    {
+     "case_id": "case_401",
+     "gold_status": "NOT_APPLICABLE",
+     "predicted_status": "NOT_APPLICABLE",
+     "gold_steps": 0,
+     "predicted_steps": 0,
+     "matched_steps": 0,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    },
+    {
+     "case_id": "case_402",
+     "gold_status": "INCOMPLETE",
+     "predicted_status": "INCOMPLETE",
+     "gold_steps": 6,
+     "predicted_steps": 6,
+     "matched_steps": 6,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    }
+   ]
+  },
+  {
+   "suite": "post_audit_evidence",
+   "cases": 1,
+   "status_correct": 1,
+   "status_accuracy": 1.0,
+   "confusion": {
+    "COMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    },
+    "INCOMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 1,
+     "NOT_APPLICABLE": 0
+    },
+    "NOT_APPLICABLE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    }
+   },
+   "steps": {
+    "true_positive": 3,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "resource_discovery": {
+    "true_positive": 1,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "fields": {
+    "state": 1.0,
+    "evidence_id": 1.0,
+    "step_no": 1.0
+   },
+   "matched_steps": 3,
+   "sequence_exact": 1,
+   "sequence_accuracy": 1.0,
+   "mean_sequence_distance": 0.0,
+   "exact_cases": 1,
+   "exact_accuracy": 1.0,
+   "identity_resolved": 1,
+   "identity_correct": 1,
+   "identity_accuracy": 1.0,
+   "causes": {},
+   "per_case": [
+    {
+     "case_id": "case_501",
+     "gold_status": "INCOMPLETE",
+     "predicted_status": "INCOMPLETE",
+     "gold_steps": 3,
+     "predicted_steps": 3,
+     "matched_steps": 3,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    }
+   ]
+  },
+  {
+   "suite": "replica_drift_resync",
+   "cases": 1,
+   "status_correct": 1,
+   "status_accuracy": 1.0,
+   "confusion": {
+    "COMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    },
+    "INCOMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 1,
+     "NOT_APPLICABLE": 0
+    },
+    "NOT_APPLICABLE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    }
+   },
+   "steps": {
+    "true_positive": 9,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "resource_discovery": {
+    "true_positive": 3,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "fields": {
+    "state": 1.0,
+    "evidence_id": 1.0,
+    "step_no": 1.0
+   },
+   "matched_steps": 9,
+   "sequence_exact": 1,
+   "sequence_accuracy": 1.0,
+   "mean_sequence_distance": 0.0,
+   "exact_cases": 1,
+   "exact_accuracy": 1.0,
+   "identity_resolved": 1,
+   "identity_correct": 1,
+   "identity_accuracy": 1.0,
+   "causes": {},
+   "per_case": [
+    {
+     "case_id": "case_201",
+     "gold_status": "INCOMPLETE",
+     "predicted_status": "INCOMPLETE",
+     "gold_steps": 9,
+     "predicted_steps": 9,
+     "matched_steps": 9,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    }
+   ]
+  },
+  {
+   "suite": "tombstone_retention",
+   "cases": 1,
+   "status_correct": 1,
+   "status_accuracy": 1.0,
+   "confusion": {
+    "COMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    },
+    "INCOMPLETE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 1,
+     "NOT_APPLICABLE": 0
+    },
+    "NOT_APPLICABLE": {
+     "COMPLETE": 0,
+     "INCOMPLETE": 0,
+     "NOT_APPLICABLE": 0
+    }
+   },
+   "steps": {
+    "true_positive": 5,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "resource_discovery": {
+    "true_positive": 3,
+    "false_positive": 0,
+    "false_negative": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+   },
+   "fields": {
+    "state": 1.0,
+    "evidence_id": 1.0,
+    "step_no": 1.0
+   },
+   "matched_steps": 5,
+   "sequence_exact": 1,
+   "sequence_accuracy": 1.0,
+   "mean_sequence_distance": 0.0,
+   "exact_cases": 1,
+   "exact_accuracy": 1.0,
+   "identity_resolved": 1,
+   "identity_correct": 1,
+   "identity_accuracy": 1.0,
+   "causes": {},
+   "per_case": [
+    {
+     "case_id": "case_301",
+     "gold_status": "INCOMPLETE",
+     "predicted_status": "INCOMPLETE",
+     "gold_steps": 5,
+     "predicted_steps": 5,
+     "matched_steps": 5,
+     "exact": true,
+     "sequence_distance": 0.0,
+     "cause": "",
+     "missing_resources": [],
+     "extra_resources": [],
+     "field_errors": []
+    }
+   ]
+  }
+ ]
+}

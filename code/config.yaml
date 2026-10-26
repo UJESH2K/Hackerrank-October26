@@ -1,0 +1,67 @@
+# Configuration for the deletion-audit agent.
+# Paths are resolved relative to the repository root (the directory above code/).
+# Secrets are never stored here; the API key is read from ANTHROPIC_API_KEY only.
+
+paths:
+  dataset_dir: dataset
+  requests_file: dataset/deletion_requests.csv
+  sample_requests_file: dataset/sample_deletion_requests.csv
+  sample_output_file: dataset/sample_output.csv
+  evidence_dir: dataset/evidence
+  output_file: output.csv
+  cache_dir: code/.cache
+  prompts_dir: code/prompts
+  usage_run_file: code/evaluation/usage_run.json
+
+llm:
+  provider: anthropic
+
+  # Request-intent classification: short text, high volume, cheap model.
+  classifier_model: claude-haiku-5-5
+  # Document and screenshot extraction: needs vision and careful transcription.
+  vision_model: claude-opus-5-5
+
+  # Thinking effort. Classification is a short judgement; transcription benefits
+  # from more care. Sampling parameters (temperature, top_p, top_k) are NOT set:
+  # a non-default value returns 400 on claude-haiku-5-5 and the parameters are
+  # removed entirely on claude-opus-5-5. Repeatability comes from the disk cache
+  # and these pinned effort levels.
+  classifier_effort: low
+  vision_effort: medium
+
+  max_output_tokens: 8192
+  classifier_batch_size: 20
+  cache_enabled: true
+
+# USD per 1M tokens.
+#
+# Source: Anthropic model and pricing documentation, via the bundled claude-api
+#   reference (https://docs.anthropic.com/en/docs/about-claude/pricing).
+# Verified: 2026-10-25, against the reference cached 2026-10-06.
+#
+# Note on claude-haiku-5-5: these rates apply to prompts up to 100K tokens.
+# Beyond that the rate is $0.50 input / $2.50 output per 1M tokens. Every
+# classification batch in this pipeline is far below 100K, so the rates below
+# are the ones that apply.
+prices_per_1m_tokens:
+  claude-haiku-5-5:
+    input: 0.10
+    output: 0.50
+  claude-opus-5-5:
+    input: 4.00
+    output: 20.00
+  # Listed for comparison; not used by this pipeline.
+  claude-sonnet-5-5:
+    input: 2.00
+    output: 10.00
+
+features:
+  # When false the pipeline must decide every case from structured data alone.
+  # --no-llm forces both off for a run.
+  use_llm_classifier: true
+  use_llm_vision: true
+  # Evidence captured after a case's audit_at is inadmissible for that case.
+  enforce_audit_cutoff: true
+  # What an unclassifiable request becomes when no model is available. True
+  # reproduces the deterministic baseline exactly.
+  fallback_is_deletion: true

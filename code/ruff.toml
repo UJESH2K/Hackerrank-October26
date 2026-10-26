@@ -1,0 +1,36 @@
+# Lint and format configuration for everything under code/.
+
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # import sorting
+    "B",    # bugbear
+    "UP",   # pyupgrade
+    "C4",   # comprehensions
+    "SIM",  # simplify
+    "RET",  # return clarity
+    "PTH",  # prefer pathlib
+    "ARG",  # unused arguments
+    "D",    # docstrings
+    "ANN",  # type annotations
+]
+ignore = [
+    "D203",  # conflicts with D211
+    "D213",  # conflicts with D212
+    "ANN401",
+]
+
+[lint.per-file-ignores]
+# Tests document themselves through their names; assertions need no annotations.
+"tests/*" = ["D103", "ANN201"]
+# The handover fixture reproduces real evidence lines; wrapping them would
+# stop it testing the real format.
+"tests/test_evidence_text.py" = ["D103", "ANN201", "E501"]
+
+[lint.pydocstyle]
+convention = "google"

@@ -1,0 +1,2 @@
+case_id,email,requested_at,reported_status,reported_at,audit_at,request_text
+case_501,ingrid.sorensen@example.dk,2026-09-01T09:00:00Z,COMPLETE,2026-09-03T11:00:00Z,2026-09-10T12:00:00Z,"Please permanently delete the account associated with this email address."
